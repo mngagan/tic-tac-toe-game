@@ -4,7 +4,6 @@ export default class Game extends Component {
   render() {
     let x = Array(this.props.x).fill("x");
     let y = Array(this.props.y).fill("y");
-    console.log(x, y);
     return (
       <div>
         Game js

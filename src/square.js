@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 export default class Square extends Component {
   render() {
-    console.log("in square render", this.props.entries);
     let finalObj = this.props.entries.filter(entry => {
       return entry.x == this.props.x + 1 && entry.y == this.props.y + 1;
     });
