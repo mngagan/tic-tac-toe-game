@@ -12,7 +12,14 @@ export default class Game extends Component {
           return (
             <div className="row">
               {x.map((singleX, xIndex) => {
-                return <Square x={xIndex} y={yIndex} />;
+                return (
+                  <Square
+                    x={xIndex}
+                    y={yIndex}
+                    onSquareCliked={this.props.onSquareCliked}
+                    entries={this.props.entries}
+                  />
+                );
               })}
             </div>
           );

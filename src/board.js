@@ -6,7 +6,12 @@ export default class Board extends Component {
     return (
       <div>
         board js
-        <Game x={this.props.x} y={this.props.y} />
+        <Game
+          x={this.props.x}
+          y={this.props.y}
+          onSquareCliked={this.props.onSquareCliked}
+          entries={this.props.entries}
+        />
       </div>
     );
   }
